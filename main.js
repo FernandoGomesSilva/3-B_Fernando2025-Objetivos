@@ -24,7 +24,7 @@ const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2025-12-21T00:00:00");
 const tempoObjetivo2 = new Date("2025-06-14T00:00:00");
 const tempoObjetivo3 = new Date("2025-12-31T00:00:00");
-const tempoObjetivo4 = new Date("2028-01-T00:00:00");
+const tempoObjetivo4 = new Date("2028-01-18T00:00:00");
 
 const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
 
