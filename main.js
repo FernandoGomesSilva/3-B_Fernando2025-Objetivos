@@ -1,64 +1,116 @@
-const botoes = document.querySelectorAll(".botao");
-const textos = document.querySelectorAll(".aba-conteudo");
+<!DOCTYPE html>
+<html lang="pt-br">
 
-for (let i=0; i < botoes.length; i++) {
-    botoes[i].onclick = function(){
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus objetivos do ano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-      for (let j=0; j<botoes.length; j++){
-        botoes[j].classList.remove("ativo");
-        textos[j].classList.remove("ativo");
-      }
+<body>
+    <section class="conteudo-principal">
+        <h2 class="titulo-principal">Meus Objetivos do ano de 2025<span>_</span></h2>
+        <div class="conteudo">
+        <div class="botoes">
+            <button class="botao ativo">Estudar mais</button>
+            <button class="botao">Terminar o curso de informática</button>
+            <button class="botao">Conseguir primeiro emprego</button>
+            <button class="botao">Melhorar minhas relações interpessoais</button>
+        </div>
+        <div class="abas-textos">
+            <div class="aba-conteudo ativo">
+                <h3 class="aba-conteudo-titulo-principal">Estudar para provas e vestibulares</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetico</h4>
+                <div class="contador">
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="dias0">7</p>
+                        <p class="contador-digito-texto">dias</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="horas0">7</p>
+                        <p class="contador-digito-texto">horas</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="min0">7</p>
+                        <p class="contador-digito-texto">min</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="seg0">7</p>
+                        <p class="contador-digito-texto">seg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="aba-conteudo">
+                <h3 class="aba-conteudo-titulo-principal">Ir todas as segundas e quartas para terminar o curso de informática que envolve excell, word, power point, digitação, ente outros.</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetico</h4>
+                <div class="contador">
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="dias1">7</p>
+                        <p class="contador-digito-texto">dias</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="horas1">7</p>
+                        <p class="contador-digito-texto">horas</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="min1">7</p>
+                        <p class="contador-digito-texto">min</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="seg1">7</p>
+                        <p class="contador-digito-texto">seg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="aba-conteudo">
+                <h3 class="aba-conteudo-titulo-principal">Ficar de olho nas vagas de emprego na minha cidade e mandar o currículo.</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetico</h4>
+                <div class="contador">
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="dias2">7</p>
+                        <p class="contador-digito-texto">dias</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="horas2">7</p>
+                        <p class="contador-digito-texto">horas</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="min2">7</p>
+                        <p class="contador-digito-texto">min</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="seg2">7</p>
+                        <p class="contador-digito-texto">seg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="aba-conteudo">
+                <h3 class="aba-conteudo-titulo-principal">Aprender a me comunicar melhor com outras pessoas, tentando sair com elas, conversar mais, ampliar minha amizades.</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetico</h4>
+                <div class="contador">
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="dias3">7</p>
+                        <p class="contador-digito-texto">dias</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="horas3">7</p>
+                        <p class="contador-digito-texto">horas</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="min3">7</p>
+                        <p class="contador-digito-texto">min</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="seg3">7</p>
+                        <p class="contador-digito-texto">seg</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </div>
+    </section>
+</body>
 
-      botoes[i].classList.add("ativo");
-      textos[i].classList.add("ativo");
-    }
-
-}
-
-
-
-
-
-
-const contadores = document.querySelectorAll(".contador");
-const tempoObjetivo1 = new Date("2025-12-01T00:00:00");
-const tempoObjetivo2 = new Date("2025-06-31T00:00:00");
-const tempoObjetivo3 = new Date("2025-12-31T00:00:00");
-const tempoObjetivo4 = new Date("2028-01-01T00:00:00");
-
-const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
-
-
-function calculaTempo(tempoObjetivo) {
-    let tempoAtual = new Date();
-    let tempoFinal = tempoObjetivo - tempoAtual;
-    let segundos = Math.floor(tempoFinal / 1000);
-    let minutos = Math.floor(segundos / 60);
-    let horas = Math.floor(minutos / 60);
-    let dias = Math.floor(horas / 24);
-
-    segundos %= 60;
-    minutos %= 60;
-    horas %= 24;
-    if (tempoFinal > 0) {
-        return [dias, horas, minutos, segundos];
-    } else {
-        return [0, 0, 0, 0];
-    }
-}
-
-function atualizaCronometro() {
-    for (let i = 0; i < contadores.length; i++) {
-        document.getElementById("dias" + i).textContent = calculaTempo(tempos[i])[0];
-        document.getElementById("horas" + i).textContent = calculaTempo(tempos[i])[1];
-        document.getElementById("min" + i).textContent = calculaTempo(tempos[i])[2];
-        document.getElementById("seg" + i).textContent = calculaTempo(tempos[i])[3];
-    }
-}
-
-function comecaCronometro() {
-    atualizaCronometro();
-    setInterval(atualizaCronometro, 1000);
-}
-
-comecaCronometro();
+</html>
